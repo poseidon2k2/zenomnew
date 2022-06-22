@@ -409,17 +409,18 @@
         setInterval(autochange, 7500);
       });
     });
-    var i = 0;
+    var j = 0;
     
     //auto slide
-    const myInterval = setInterval(autochange, 8000);
+    const myInterval = setInterval(autochange, 7500);
 
-    function autochange(){
-      i = i+1;
-      sliderNav(i);
-      if (i == 2) {
-        i = -1;
+    function autochange(){      
+      j = j+1;
+      sliderNav(j);
+      if (j == 2) {
+        j = -1;
       }
+      console.log(j);
     }
 
 
